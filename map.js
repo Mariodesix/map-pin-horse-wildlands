@@ -1200,7 +1200,7 @@ search.addEventListener('input', () => {
 /* =======================
    LETTORE COORDINATE (DEV)
 ======================= */
-const DEV_MODE = true;
+const DEV_MODE = false;
 
 let coordsEnabled = false;
 let lastCoords = null;
