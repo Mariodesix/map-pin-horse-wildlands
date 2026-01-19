@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>RDR2 Horse Map</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <!-- Font Western -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- UI BAR -->
+<div id="ui-bar">
+  <input type="text" id="search" placeholder="Cerca cavallo..." />
+</div>
+
+<!-- COORDS (DEV) -->
+<div id="coords-box">
+  <span>Coordinate</span>
+  <div id="coords">X: — | Y: —</div>
+  <button id="copy-coords">Copia</button>
+  <button id="toggle-coords">📍 Coordinate</button>
+</div>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<!-- HORSE PANEL -->
+<div id="horse-panel">
+  <h2 id="hp-name"></h2>
+  <img id="hp-image" />
+
+  <p><b>Manto:</b> <span id="hp-coat"></span></p>
+  <p><b>Addestramento:</b> <span id="hp-training"></span></p>
+
+  <p><b>1–10 ANNI ($):</b> <span id="hp-value-young"></span></p>
+  <p><b>11–15 ANNI ($):</b> <span id="hp-value-old"></span></p>
+
+  <p><b>1–10 ADDESTRATO ($):</b> <span id="hp-training-young"></span></p>
+  <p><b>11–15 ADDESTRATO ($):</b> <span id="hp-training-old"></span></p>
+  <br><br>
+  <p class="note">*Il valore del cavallo varia in base all'età</p>
+  <br><br>
+  <p class="note">*Il puledro (0–5 ANNI) si può vendere a +$200 rispetto al prezzo (1–10)</p>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="map.js"></script>
+
+</body>
+</html>
