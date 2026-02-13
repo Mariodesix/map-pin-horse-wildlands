@@ -441,7 +441,7 @@ const HORSES = [
   tier: "elite",
   x: 19270, 
   y: 14258,
-  bliPrice: 2500,
+  bliPrice: 1175,
   coat: "Piebald",
   get training() { 
     return  this.bliPrice * 0.1;
